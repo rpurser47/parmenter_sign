@@ -18,15 +18,15 @@ while 1:
 
         segmentsToLight = int(round(float(currentLevel - minValue)/float(maxValue - minValue) * segments))
 
-		timeofday = time.localtime().tm_hour
-		if timeofday < 6 or timeofday >= 22:
-			segmentcommand = "0"
-		else if (timeofday >= 6 and timeofday < 8) or (timeofday >= 15 and timeofday < 17):
-			segmentcommand = "4"
-		else if timeofday >= 17 and timeofday < 22:
-			segmentcommand = "1"
-		else:
-			segmentcommand = "9"
+        timeofday = time.localtime().tm_hour
+        if timeofday < 6 or timeofday >= 22:
+            segmentcommand = "0"
+        elif (timeofday >= 6 and timeofday < 8) or (timeofday >= 15 and timeofday < 17):
+            segmentcommand = "4"
+        elif timeofday >= 17 and timeofday < 22:
+            segmentcommand = "1"
+        else:
+            segmentcommand = "9"
 
         command = "+"
         for i in range(8):
