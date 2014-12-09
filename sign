@@ -21,7 +21,7 @@ case "$1" in
     python /home/pi/parmenter_sign/sign.py &
     ;;
   stop)
-    echo "Stopping noip"
+    echo "Stopping sign"
     # kill application you want to stop
     killall sign
     ;;
