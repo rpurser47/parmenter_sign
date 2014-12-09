@@ -18,7 +18,7 @@ case "$1" in
   start)
     echo "Starting sign"
     # run application you want to start
-    python /home/pi/parmenter_sign/sign.py
+    python /home/pi/parmenter_sign/sign.py &
     ;;
   stop)
     echo "Stopping noip"
